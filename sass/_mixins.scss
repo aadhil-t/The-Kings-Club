@@ -1,0 +1,18 @@
+@mixin full-width {
+    width: 100%;
+}
+@mixin flex($align, $justify, $wrap: nowrap, $direction: row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+@mixin primary-font {
+    font-family: 'ArticulatCF'!important;
+}
+@mixin secondary-font {
+    font-family: "Anek Malayalam", serif!important;
+}
+
+

@@ -1,0 +1,165 @@
+.gallery-blk-sec{
+    padding-top: 9.4rem;
+    @media screen and (max-width: $lg) {
+        padding-top:7rem;
+    }
+    @media screen and (max-width: $md) {
+        padding-top:5rem;
+    }
+    @media screen and (max-width: $sm) {
+        padding-top:3rem;
+    }
+    .cntr-blk{
+        max-width: 61rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 3.7rem;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 992px) {
+            max-width: 55rem;
+        }
+        @media screen and (max-width: $sm) {
+            max-width: 100%;
+            padding-bottom: 3rem;
+        }
+        h3{
+            color: $primary-color;
+            font-weight: 400;
+            text-transform: capitalize;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            @media screen and (max-width: $xl) {
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+                flex-wrap: wrap;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+              
+        }
+        h2{
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 1.2;
+            text-align: center;
+            color: $secondary-color;
+            @include secondary-font;
+            margin-bottom: 1.1rem;
+            @media screen and (max-width: $xl) {
+                font-size: 3rem;
+                line-height: 1.2;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.7rem;
+            }
+          
+        }
+    }
+ 
+    .grid-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2.1rem 0;
+        .lft{
+            width: calc(66.66% - 1.05rem);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem 0;
+            @media screen and (max-width: $sm) {
+               width: 100%;
+            }
+        }
+        .rht{
+            width: calc(33.33% - 1.05rem);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem 0;
+            @media screen and (max-width: $sm) {
+                width: 100%;
+            }
+        }
+        .top-lft{
+            @include flex(flex-start, space-between, wrap);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.05rem 0;
+            width: 100%;
+            @media screen and (max-width: $sm) {
+                gap: 2rem 0;
+            }
+
+            .normalblk{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 2rem 0;
+                width: calc(63% - 1.05rem);
+                overflow: hidden;
+                @media screen and (max-width: $sm) {
+                    width: 100%;
+                }
+            }
+            .tallblk{
+                width: calc(37% - 1.05rem);
+                overflow: hidden;
+                @media screen and (max-width: $sm) {
+                    width: 100%;
+                }
+            }
+        }
+        .btm-lft{
+            width: 100%;
+        }
+        .img-blk{
+            overflow: hidden;
+            border-radius: 2.5rem;
+            transition: 0.7s ease all;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+            border-radius: 2.5rem;
+            transition: 0.7s ease all;
+
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.7s ease all;
+            }
+        }
+      
+    }
+      
+    
+
+}

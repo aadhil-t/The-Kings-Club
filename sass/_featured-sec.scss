@@ -1,0 +1,276 @@
+.featured-main-sec{
+    @media screen and (max-width: $sm) {
+    //    padding-bottom: 3rem;
+       padding-bottom: 0;
+    }
+    .featured-main-wrapper{
+    position: relative;
+    }
+    .video-wrapper{
+        @include flex(flex-end, space-between, wrap);
+        gap: 2.5rem;
+        @media screen and (max-width: $md) {
+           gap: 1.5rem;
+        }
+    }
+    .video__content{
+        width: 65%;
+        padding-top: 7.2rem;
+        @media screen and (max-width: $xl) {
+            width: 60%;
+        }
+        @media screen and (max-width: $md) {
+            width: 57%;
+            padding-bottom: 3rem;
+            padding-top: 5rem;
+        }
+        @media screen and (max-width: $sm) {
+            width: 100%;
+            padding-top: 3rem;
+        }
+        
+        
+    }
+    .top-content{
+        padding-bottom: 3.6rem;
+        border-bottom: 0.1rem solid $theme-light-grey-20;
+        @media screen and (max-width: $md) {
+            padding-bottom: 3rem;
+        }
+        h3{
+            font-size: 3.5rem;
+            color: $secondary-color;
+            line-height: 1.3;
+            @include secondary-font;
+            @media screen and (max-width: $xl) {
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+                line-height: 1.5;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .btm-content{
+        padding-bottom: 3.6rem;
+        padding-top: 3.1rem;
+        border-bottom: 0.1rem solid $theme-light-grey-20;
+        @include flex(flex-start, space-between, nowrap);
+
+        @media screen and (max-width: $md) {
+            padding-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        h2{
+            font-size: 5rem;
+            color: $primary-color;
+            line-height: 1.3;
+            font-weight: 600;
+            @media screen and (max-width: $xl) {
+                font-size: 4rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 3.5rem;
+                line-height: 1.5;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 2.5rem;
+            }
+          
+        }
+        h3{
+            font-size: 2.5rem;
+            color: $primary-color-2;
+            line-height: 1.3;
+            font-weight: 500;
+            @media screen and (max-width: $xl) {
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+                line-height: 1.5;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+        }
+        .col{
+            width: 27.2%;
+            .counter-anim{
+                display: inline-flex;
+            }
+            @media screen and (max-width: $md) {
+               width: 100%;
+            }
+            @media screen and (max-width: $sm) {
+                text-align: center;
+             }
+        }
+    }
+    .video-blk{
+        width: 32.5%;
+        position: absolute;
+        right: 0;
+        top: -6.5rem;
+        @media screen and (max-width: $xl) {
+            top: -3rem;
+        }
+        @media screen and (max-width: $md) {
+            width: 40%;
+            top: 3rem;
+        }
+        @media screen and (max-width: $sm) {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: auto;
+            right: auto;
+
+        }
+        a{
+            display: inline-block;
+            border-radius: 4rem;
+            border: 0.1rem solid #946810CC;
+            box-shadow: 0px 4px 35px 0px #A9720566;
+            border-radius: 4rem;
+            margin-bottom: 2.7rem;
+            position: relative;
+            img{
+                border-radius: 4rem;
+            }
+            @media screen and (max-width: $md) {
+                margin-bottom: 0;
+             }
+        }
+        h4{
+            font-weight: 500;
+            width: 75%;
+            text-align: right;
+            margin-left: auto;
+            color: $secondary-color;
+            margin-top: 2rem;
+            font-size: 2.5rem;
+            @media screen and (max-width: $xl) {
+                font-size: 2.4rem;
+                width: 85%;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+                line-height: 1.5;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+                width: 100%;
+                text-align: center;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+        }
+        .play{
+            content: "";
+            position: absolute;
+            background-image: url('../images/play.svg');
+            background-repeat: no-repeat;
+            background-size: 10rem;
+            width: 10rem;
+            height: 10rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 40%;
+            @media screen and (max-width: $xl) {
+                background-size: 8rem;
+                width: 8rem;
+                height: 8rem;
+            }
+            @media screen and (max-width: $lg) {
+                background-size: 6rem;
+                width: 6rem;
+                height: 6rem;
+            }
+            @media screen and (max-width: $md) {
+                background-size: 5rem;
+                width: 5rem;
+                height: 5rem;
+            }
+            @media screen and (max-width: $sm) {
+                background-size: 6rem;
+                width: 6rem;
+                height: 6rem;
+            }
+           
+        }
+    }
+    .featured-logo-slider{
+        padding-top: 3.6rem;
+        padding-bottom: 1.5rem;
+        @media screen and (max-width: $md) {
+            padding-top: 3rem;
+        }
+        .c-carousel__slider {
+            display: flex;
+            align-items: center;
+        }
+        .c-carousel__item {
+        max-width: 21rem;
+        width: auto;
+        flex-shrink: 0;
+        }
+        .slick-slide {
+            margin: 0 1.15rem;
+        }
+        h6{
+            font-size: 2rem;
+            font-weight: 500;
+            color: $secondary-color-80;
+            margin-bottom: 1.4rem;
+            line-height: 1.2;
+            @media screen and (max-width: 992px) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+  
+    
+}
