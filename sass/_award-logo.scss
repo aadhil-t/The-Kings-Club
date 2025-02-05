@@ -203,6 +203,12 @@
                         @media screen and (max-width: $sm) {
                            gap: 14rem;
                         }
+                        img{
+                            &:hover{
+                                transition: 0.7s ease all;
+                                transform: scale(1.1);
+                            }
+                        }
                     }
                 }
             }

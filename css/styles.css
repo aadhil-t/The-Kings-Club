@@ -2696,10 +2696,7 @@ button.swiper-pagination-bullet {
   transition: 0.7s ease all;
 }
 .border-gradient-btn:hover {
-  -webkit-transition: 0.7s ease all;
-  transition: 0.7s ease all;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background-color: #E49F04;
   color: #FFFFFF !important;
 }
 @media screen and (max-width: 1080px) {
@@ -2963,7 +2960,7 @@ button.swiper-pagination-bullet {
   }
 }
 .home-banner-sec .btm-blk {
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 1280px) {
   .home-banner-sec .btm-blk {
@@ -4932,6 +4929,12 @@ button.swiper-pagination-bullet {
   .award-logo-sec .award-logo-wrapper .rht-contnt-blk .btm-contnt-sec .rht-logo-blk .blk {
     gap: 14rem;
   }
+}
+.award-logo-sec .award-logo-wrapper .rht-contnt-blk .btm-contnt-sec .rht-logo-blk .blk img:hover {
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .testimonial-slider-sec {
