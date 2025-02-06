@@ -1,16 +1,25 @@
+
 .btm-large-banner{
     background-image: url('../images/btm-banner1.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;
     background-position: center;
     width: 100%;
     height: auto;
     min-height: 71.3rem;
     position: relative;
     padding-bottom: 9.4rem;
-    @media screen and (max-width: $sm) {
+    margin-top: unset !important ;
+    @media (max-width: 2560px) {
+        background-size: contain !important;
+    }
+    @media screen and (max-width: $lg) {
+        margin-top: -46rem  !important  ;
+    }
+    @media screen and (max-width: $md) {
         background-image: none;
         padding-bottom: 0;
+        margin-top: unset !important ;
     }
 
     .large-banner{
@@ -20,13 +29,16 @@
             width: 100%;
             object-fit: cover
         }
-        @media screen and (max-width: $sm) {
+        @media screen and (max-width: $md) {
             display: block;
         }
     }
     .video-gallery-area{
         padding-top: 54.3rem;
-        @media screen and (max-width: $sm) {
+        @media screen and (max-width: $lg) {
+            padding-top: 70.3rem;
+        }
+        @media screen and (max-width: $md) {
            padding-top: 3rem;
            background-color: $theme-black;
            padding-bottom: 3rem;

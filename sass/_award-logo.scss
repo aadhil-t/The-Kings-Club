@@ -204,6 +204,7 @@
                            gap: 14rem;
                         }
                         img{
+                            transition: 0.7s ease all;
                             &:hover{
                                 transition: 0.7s ease all;
                                 transform: scale(1.1);

@@ -1,0 +1,64 @@
+.thank-sec{
+    background-image: url("../images/program/thank.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    .thank-outer{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .thank-content{
+            text-align: center;
+            h2{
+                padding-bottom: 20px;
+            }
+            p{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .thank-sec{
+        .thank-outer{
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+    
+            .thank-content{
+                text-align: center;
+                h2{
+                    font-size:4rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .thank-sec{
+        .thank-outer{
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+    
+            .thank-content{
+                text-align: center;
+                h2{
+                    font-size:3rem;
+                }
+            }
+        }
+    }
+}

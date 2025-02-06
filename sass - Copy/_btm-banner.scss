@@ -1,0 +1,142 @@
+
+.btm-large-banner{
+    background-image: url('../images/btm-banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    min-height: 71.3rem;
+    position: relative;
+    padding-bottom: 9.4rem;
+    margin-top: unset !important ;
+    @media (max-width: 2560px) {
+        background-size: contain !important;
+    }
+    @media screen and (max-width: $lg) {
+        margin-top: -46rem  !important  ;
+    }
+    @media screen and (max-width: $md) {
+        background-image: none;
+        padding-bottom: 0;
+        margin-top: unset !important ;
+    }
+
+    .large-banner{
+        margin-top: 3.5rem;
+        display: none;
+        img{
+            width: 100%;
+            object-fit: cover
+        }
+        @media screen and (max-width: $md) {
+            display: block;
+        }
+    }
+    .video-gallery-area{
+        padding-top: 54.3rem;
+        @media screen and (max-width: $lg) {
+            padding-top: 70.3rem;
+        }
+        @media screen and (max-width: $md) {
+           padding-top: 3rem;
+           background-color: $theme-black;
+           padding-bottom: 3rem;
+        }
+       
+        h4{
+            color: $secondary-color;
+            font-weight: 400;
+            text-transform: capitalize;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            margin-bottom: 4.8rem;
+            @media screen and (max-width: $xl) {
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+                flex-wrap: wrap;
+                margin-bottom: 3rem;
+
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .video-gallery-wrapper{
+        @include flex(flex-start, space-between, wrap);
+        gap: 2.65rem 0;
+    }
+    .video-blk{
+        width: calc(33.33% - 5.3rem);
+        height: 100%;
+        max-height: 25.4rem;
+        margin-bottom: 5.4rem;
+        @media screen and (max-width: $sm) {
+            margin-bottom: 0;
+        }
+        a{
+            display: inline-block;
+            border-radius: 3rem;
+            border: 0.1rem solid #A9720566;
+            position: relative;
+            width: 100%;
+            max-height: 25.4rem;
+            transition: 0.7s ease all;
+
+            img{
+                border-radius: 3rem;
+                width: 100%;
+                object-fit: cover;
+                max-height: 25.4rem;
+            }
+            &:hover{
+                box-shadow: 0px 4px 35px 0px #A9720533;
+                transition: 0.7s ease all;
+            }
+        }
+        .play{
+            content: "";
+            position: absolute;
+            background-image: url('../images/play.svg');
+            background-repeat: no-repeat;
+            background-size: 5.5rem;
+            width: 5.5rem;
+            height: 5.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 40%;
+            @media screen and (max-width: $xl) {
+                background-size: 5rem;
+                width: 5rem;
+                height: 5rem;
+            }
+            @media screen and (max-width: $lg) {
+                background-size: 4rem;
+                width: 4rem;
+                height: 4rem;
+            }
+           
+        }
+        @media screen and (max-width: $lg) {
+            width: calc(50% - 5.3rem);
+        }
+        @media screen and (max-width: $sm) {
+            width:100%;
+        }
+    }
+}

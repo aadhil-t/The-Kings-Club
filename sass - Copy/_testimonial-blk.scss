@@ -1,0 +1,273 @@
+.testimonial-slider-sec{
+    padding-top: 19.5rem;
+    padding-bottom: 9.5rem;
+    background-color: $theme-black-20;
+    @media screen and (max-width: $lg) {
+        padding-top:25rem;
+        padding-bottom: 7rem;
+    }
+    @media screen and (max-width: $md) {
+        padding-top:13rem;
+        padding-bottom: 5rem;
+    }
+    @media screen and (max-width: $sm) {
+        padding-top:13rem;
+        padding-bottom: 3rem;
+    }
+    .cntr-blk{
+        max-width: 61rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+        @media screen and (max-width: 992px) {
+            max-width: 55rem;
+        }
+        @media screen and (max-width: $sm) {
+            max-width: 100%;
+        }
+        h3{
+            color: $primary-color;
+            font-weight: 400;
+            text-transform: capitalize;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            @media screen and (max-width: $xl) {
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.2rem;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.6rem;
+                flex-wrap: wrap;
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 1.5rem;
+            }
+              
+        }
+        h2{
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 1.2;
+            text-align: center;
+            color: $secondary-color;
+            @include secondary-font;
+            margin-bottom: 1.1rem;
+            @media screen and (max-width: $xl) {
+                font-size: 3rem;
+                line-height: 1.2;
+            }
+            @media screen and (max-width: $lg) {
+                font-size: 2.5rem;
+            }
+            @media screen and (max-width: 992px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: $md) {
+                font-size: 1.8rem;
+            }
+            @media screen and (max-width: $sm) {
+                font-size: 1.7rem;
+            }
+          
+        }
+    }
+    .testimonial-blk__slider{
+        .testimonial-blk{
+            position: relative;
+            .contnt-bx{
+                @include flex(flex-start, flex-start, wrap);
+                padding: 3.8rem 0 7.8rem;
+                background: $theme-dark-grey;
+                border-radius: 3rem;
+                min-height: 37rem;
+                max-height: 37rem;
+                .quotes{
+                    margin-bottom: 1.3rem;
+                    object-fit: contain;
+                    max-width: 2.3rem;
+                    max-height: 2rem;
+                    width: 100%;
+                    display: block;
+                    margin-left: 3.3rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                    line-height: 1.45;
+                    color:$secondary-color-60;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 9; 
+                    overflow: hidden;
+                    padding: 0 3.3rem;
+                    @media screen and (max-width: $xl) {
+                        font-size: 1.6rem;
+                    }
+                    @media screen and (max-width: $lg) {
+                        font-size: 1.5rem;
+                    }
+                    @media screen and (max-width: $md) {
+                        font-size: 1.4rem;
+                    }
+                }
+                @media screen and (max-width: $md) {
+                    min-height: 35rem;
+                    max-height: 35rem;
+                }
+                @media screen and (max-width: $sm) {
+                   min-height: auto;
+                   max-height: 100%;
+                   padding: 3rem 0 5rem;
+                 }
+            }
+            .info-blk{
+                position: absolute;
+                bottom: -5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;
+                width: 100%;
+                img{
+                    object-fit: contain;
+                    height: 100%;
+                    max-height: 7rem;
+                    width: 100%;
+                    max-width: 7rem;
+                    margin: 0 auto;
+                    @media screen and (max-width: $sm) {
+                        max-height: 5.5rem;
+                        max-width: 5.5rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+                span{
+                    color: $secondary-color;
+                    font-size: 1.8rem;
+                    line-height: 1.32;
+                    font-weight: 500;
+                    display: block;
+                    text-align: center;
+                    @media screen and (max-width: $xl) {
+                        font-size: 1.7rem;
+                    }
+                    @media screen and (max-width: $lg) {
+                        font-size: 1.6rem;
+                    }
+                    @media screen and (max-width: 992px) {
+                        font-size: 1.5rem;
+                    }
+                    @media screen and (max-width: $md) {
+                        font-size: 1.4rem;
+                    }
+                    @media screen and (max-width: $sm) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .slick-slide {
+            margin: 0 1.5rem;
+            opacity: 0!important;
+            &.slick-active{
+                opacity: 1!important;
+            }
+        }
+        .slick-list{
+            overflow: visible;
+            margin-bottom: 9rem;
+            @media screen and (max-width: $sm) {
+                margin-bottom: 8rem;
+            }
+        }
+       
+        ul.slick-dots{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin: 0 -1rem;
+            @include flex(center, center, wrap);
+            li{
+                font-size: 0;
+                line-height: 0;
+                margin: 0 1rem;
+                cursor: pointer;
+                button{
+                    background:rgba($primary-color,0.2);
+                    border-radius: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin: 0;
+                    border: none;
+                    @media screen and (max-width: $sm) {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
+                &.slick-active,&:hover{
+                    button{
+                    background:$primary-color;
+                    }
+                }
+            }
+        }
+        .video-blk{
+            width: 100%;
+            height: 100%;
+            max-height: 21.2rem;
+            a{
+                display: inline-block;
+                border-radius: 4rem;
+                position: relative;
+                width: 100%;
+                max-height: 21.2rem;
+                img{
+                    border-radius: 4rem;
+                    width: 100%;
+                    object-fit: cover;
+                    max-height: 21.2rem;
+                }
+            }
+            .play{
+                content: "";
+                position: absolute;
+                background-image: url('../images/play.svg');
+                background-repeat: no-repeat;
+                background-size: 5.5rem;
+                width: 5.5rem;
+                height: 5.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 40%;
+                @media screen and (max-width: $xl) {
+                    background-size: 5rem;
+                    width: 5rem;
+                    height: 5rem;
+                }
+                @media screen and (max-width: $lg) {
+                    background-size: 4rem;
+                    width: 4rem;
+                    height: 4rem;
+                }
+               
+            }
+        }
+
+    }
+    .container{
+        max-width: 129rem;
+    }
+}

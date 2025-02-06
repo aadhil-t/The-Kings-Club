@@ -10,9 +10,13 @@
         border-radius: 4rem;
         padding-left: 7.7rem;
         padding-right: 7.7rem;
+        @media (max-width: 2560px) {
+            padding-bottom: 126px;
+        }
         @media screen and (max-width: $lg) {
             padding-left: 4rem;
             padding-right: 4rem;
+            padding-bottom: 179px;
         }
         @media screen and (max-width: $md) {
            display: flex;
@@ -157,9 +161,7 @@
                 // max-width: 366px;
                 border-radius: 30px;
                 padding: 33px 34px 42px 33px;
-                &:hover{
-                    
-                }
+               
                 ul{
                     margin: 0;  
                     padding-bottom: 0;

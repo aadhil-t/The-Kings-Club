@@ -144,6 +144,9 @@
             overflow: hidden;
             border-radius: 2.5rem;
             transition: 0.7s ease all;
+            @media screen and (max-width: $sm) {
+                width: 100%;
+            }
         }
         img{
             width: 100%;

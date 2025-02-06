@@ -455,6 +455,33 @@ p, li {
     background-position: 0% 50%;
   }
 }
+@-webkit-keyframes bounceWithPause {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@keyframes bounceWithPause {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+.animate-bounce-delay {
+  -webkit-animation: bounceWithPause 1s ease-in-out 1, none 5s;
+          animation: bounceWithPause 1s ease-in-out 1, none 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 body.compensate-for-scrollbar {
   overflow: hidden;
 }
@@ -4930,6 +4957,10 @@ button.swiper-pagination-bullet {
     gap: 14rem;
   }
 }
+.award-logo-sec .award-logo-wrapper .rht-contnt-blk .btm-contnt-sec .rht-logo-blk .blk img {
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
 .award-logo-sec .award-logo-wrapper .rht-contnt-blk .btm-contnt-sec .rht-logo-blk .blk img:hover {
   -webkit-transition: 0.7s ease all;
   transition: 0.7s ease all;
@@ -5536,6 +5567,11 @@ button.swiper-pagination-bullet {
   -webkit-transition: 0.7s ease all;
   transition: 0.7s ease all;
 }
+@media screen and (max-width: 580px) {
+  .gallery-blk-sec .grid-wrapper .img-blk {
+    width: 100%;
+  }
+}
 .gallery-blk-sec .grid-wrapper img {
   width: 100%;
   -o-object-fit: cover;
@@ -5629,11 +5665,23 @@ button.swiper-pagination-bullet {
   min-height: 71.3rem;
   position: relative;
   padding-bottom: 9.4rem;
+  margin-top: unset !important;
 }
-@media screen and (max-width: 580px) {
+@media (max-width: 2560px) {
+  .btm-large-banner {
+    background-size: contain !important;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .btm-large-banner {
+    margin-top: -46rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
   .btm-large-banner {
     background-image: none;
     padding-bottom: 0;
+    margin-top: unset !important;
   }
 }
 .btm-large-banner .large-banner {
@@ -5645,7 +5693,7 @@ button.swiper-pagination-bullet {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   .btm-large-banner .large-banner {
     display: block;
   }
@@ -5653,7 +5701,12 @@ button.swiper-pagination-bullet {
 .btm-large-banner .video-gallery-area {
   padding-top: 54.3rem;
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1080px) {
+  .btm-large-banner .video-gallery-area {
+    padding-top: 70.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .btm-large-banner .video-gallery-area {
     padding-top: 3rem;
     background-color: #000000;
@@ -6020,10 +6073,16 @@ button.swiper-pagination-bullet {
   padding-left: 7.7rem;
   padding-right: 7.7rem;
 }
+@media (max-width: 2560px) {
+  .success-box-sec .success-box-outer {
+    padding-bottom: 126px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .success-box-sec .success-box-outer {
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-bottom: 179px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -6592,6 +6651,14 @@ button.swiper-pagination-bullet {
   border: 1px solid rgba(208, 208, 208, 0.5);
   border-radius: 50px;
   padding: 18px 40px 18px 20px;
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
+.program-sec .program-outer .progrm-box-wrap .progrm-box .progrm-text:hover {
+  -webkit-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media (max-width: 580px) {
   .program-sec .program-outer .progrm-box-wrap .progrm-box .progrm-text {
