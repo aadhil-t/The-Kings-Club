@@ -1,6 +1,8 @@
 .descion-chnge-sec{
   padding-top: 10.9rem;
   position: relative;
+  z-index: 1;
+  background-color: #131313;
   @media screen and (max-width: $lg) {
     padding-top:7rem;
     }

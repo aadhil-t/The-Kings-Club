@@ -1,6 +1,9 @@
 .box-use-sec{
     padding-top: 9.7rem;
     padding-bottom: 5.7rem;
+    position: relative;
+    z-index: 1;
+    background-color: #131313;
     @media screen and (max-width: $lg) {
         padding-top: 7rem;
     }
@@ -91,10 +94,10 @@
         margin: 0 1rem;
         @include flex(flex-start, flex-start, wrap);
         flex-direction: column;
-        padding: 3.8rem 3.3rem 4.5rem;
+        padding: 3.8rem 4.3rem 4.5rem;
         background: #0B0B0B;
         border: 0.1rem solid transparent;
-
+        // min-height: 444px;
         border-radius: 4rem;
         transition: 0.7s ease all;
         @media screen and (max-width: $lg) {

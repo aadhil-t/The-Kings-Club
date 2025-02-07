@@ -404,6 +404,10 @@ p, li {
   color: #FFFFFF;
 }
 
+.succ-padd-btm {
+  padding-bottom: 193px;
+}
+
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -2280,6 +2284,9 @@ button.swiper-pagination-bullet {
   padding-top: 10.5rem;
   padding-bottom: 6.7rem;
   background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 0;
+  background-color: #131313;
 }
 @media screen and (max-width: 580px) {
   .footer-main-sec {
@@ -2628,6 +2635,24 @@ button.swiper-pagination-bullet {
   }
 }
 
+.btm-large-banner-parallaxis {
+  position: relative;
+}
+.btm-large-banner-parallaxis .king-text {
+  text-align: center;
+  position: fixed;
+  top: 42%;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 0;
+}
+.btm-large-banner-parallaxis .king-text img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .common-gradient-btn {
   border: none;
   background: -webkit-gradient(linear, left top, right top, from(#E49F04), to(#7E5802));
@@ -2762,6 +2787,7 @@ button.swiper-pagination-bullet {
   background-size: cover;
   position: relative;
   height: auto;
+  z-index: 1;
 }
 .home-banner-sec::before {
   content: "";
@@ -3326,6 +3352,11 @@ button.swiper-pagination-bullet {
   }
 }
 
+.featured-main-sec {
+  position: relative;
+  z-index: 1;
+  background-color: #131313;
+}
 @media screen and (max-width: 580px) {
   .featured-main-sec {
     padding-bottom: 0;
@@ -3728,6 +3759,8 @@ button.swiper-pagination-bullet {
   position: relative;
   height: auto;
   width: 100%;
+  background-color: #131313;
+  z-index: 1;
 }
 @media screen and (max-width: 1080px) {
   .first-step-sec {
@@ -3924,6 +3957,8 @@ button.swiper-pagination-bullet {
   padding-top: 8.1rem;
   padding-bottom: 9.5rem;
   position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .chnge-business-sec {
@@ -4103,6 +4138,8 @@ button.swiper-pagination-bullet {
   padding-top: 8.1rem;
   padding-bottom: 9.5rem;
   position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .two-list-sec {
@@ -4379,6 +4416,9 @@ button.swiper-pagination-bullet {
 .box-use-sec {
   padding-top: 9.7rem;
   padding-bottom: 5.7rem;
+  position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .box-use-sec {
@@ -4520,7 +4560,7 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: row;
           flex-direction: row;
   flex-direction: column;
-  padding: 3.8rem 3.3rem 4.5rem;
+  padding: 3.8rem 4.3rem 4.5rem;
   background: #0B0B0B;
   border: 0.1rem solid transparent;
   border-radius: 4rem;
@@ -4635,6 +4675,8 @@ button.swiper-pagination-bullet {
   position: relative;
   height: auto;
   width: 100%;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .award-logo-sec {
@@ -4969,9 +5011,12 @@ button.swiper-pagination-bullet {
 }
 
 .testimonial-slider-sec {
-  padding-top: 19.5rem;
+  padding-top: 88px;
   padding-bottom: 9.5rem;
   background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  background-color: #0B0B0B;
 }
 @media screen and (max-width: 1080px) {
   .testimonial-slider-sec {
@@ -5337,6 +5382,9 @@ button.swiper-pagination-bullet {
 
 .gallery-blk-sec {
   padding-top: 9.4rem;
+  position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .gallery-blk-sec {
@@ -5590,6 +5638,9 @@ button.swiper-pagination-bullet {
 
 .specialbatch-booknw-sec {
   padding-top: 9.9rem;
+  position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .specialbatch-booknw-sec {
@@ -5656,25 +5707,19 @@ button.swiper-pagination-bullet {
 }
 
 .btm-large-banner {
-  background-image: url("../images/btm-banner1.png");
+  background-image: url("../images/king-group.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   width: 100%;
   height: auto;
   min-height: 71.3rem;
   position: relative;
-  padding-bottom: 9.4rem;
   margin-top: unset !important;
-}
-@media (max-width: 2560px) {
-  .btm-large-banner {
-    background-size: contain !important;
-  }
+  z-index: 1;
 }
 @media screen and (max-width: 1080px) {
   .btm-large-banner {
-    margin-top: -46rem !important;
+    margin-top: 0 !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -5698,12 +5743,19 @@ button.swiper-pagination-bullet {
     display: block;
   }
 }
-.btm-large-banner .video-gallery-area {
-  padding-top: 54.3rem;
+@media (max-width: 2560px) {
+  .btm-large-banner .video-gallery-area {
+    padding-top: 91.3rem;
+  }
+}
+@media (max-width: 1440px) {
+  .btm-large-banner .video-gallery-area {
+    padding-top: 54.3rem;
+  }
 }
 @media screen and (max-width: 1080px) {
   .btm-large-banner .video-gallery-area {
-    padding-top: 70.3rem;
+    padding-top: 50.3rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -5712,6 +5764,9 @@ button.swiper-pagination-bullet {
     background-color: #000000;
     padding-bottom: 3rem;
   }
+}
+.btm-large-banner .video-gallery-area .bgbg {
+  background-color: #131313;
 }
 .btm-large-banner .video-gallery-area h4 {
   color: #FFFFFF;
@@ -5729,6 +5784,7 @@ button.swiper-pagination-bullet {
           align-items: center;
   font-size: 3.5rem;
   margin-bottom: 4.8rem;
+  padding-top: 20px;
 }
 @media screen and (max-width: 1280px) {
   .btm-large-banner .video-gallery-area h4 {
@@ -5856,6 +5912,8 @@ button.swiper-pagination-bullet {
 .descion-chnge-sec {
   padding-top: 10.9rem;
   position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 @media screen and (max-width: 1080px) {
   .descion-chnge-sec {
@@ -6061,6 +6119,8 @@ button.swiper-pagination-bullet {
 
 .success-box-sec {
   position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 .success-box-sec .success-box-outer {
   display: -webkit-box;
@@ -6072,11 +6132,6 @@ button.swiper-pagination-bullet {
   border-radius: 4rem;
   padding-left: 7.7rem;
   padding-right: 7.7rem;
-}
-@media (max-width: 2560px) {
-  .success-box-sec .success-box-outer {
-    padding-bottom: 126px;
-  }
 }
 @media screen and (max-width: 1080px) {
   .success-box-sec .success-box-outer {
@@ -6418,6 +6473,9 @@ button.swiper-pagination-bullet {
   background-position: center;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
+  background-color: #131313;
 }
 .experience-sec .exp-outer .exp-cntnt {
   text-align: center;
@@ -6454,8 +6512,11 @@ button.swiper-pagination-bullet {
 }
 .experience-sec .exp-outer .exp-cntnt h4 {
   color: #FFFFFF;
+  font-family: "Anek Malayalam", serif !important;
   font-weight: 400;
   font-size: 3.5rem;
+  max-width: 97rem;
+  margin: 0 auto;
   margin-bottom: 3.1rem;
 }
 @media screen and (max-width: 1280px) {
@@ -6483,6 +6544,7 @@ button.swiper-pagination-bullet {
     font-size: 1.6rem;
     margin-bottom: 3rem;
     line-height: 1.6;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -6507,6 +6569,9 @@ button.swiper-pagination-bullet {
 
 .program-sec {
   padding-bottom: 9.8rem;
+  z-index: 1;
+  background-color: #131313;
+  position: relative;
 }
 @media screen and (max-width: 1080px) {
   .program-sec {

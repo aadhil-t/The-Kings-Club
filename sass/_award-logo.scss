@@ -7,6 +7,8 @@
     position: relative;
     height: auto;
     width: 100%;
+    z-index: 1;
+    background-color: #131313;
     @media screen and (max-width: $lg) {
         padding-bottom: 7rem;
     }

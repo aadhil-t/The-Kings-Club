@@ -1,20 +1,19 @@
 
 .btm-large-banner{
-    background-image: url('../images/btm-banner1.png');
+    background-image: url('../images/king-group.png');
     background-repeat: no-repeat;
-    background-size: cover ;
-    background-position: center;
+    // background-size: cover ;
+    background-size: contain ;
+    // background-position: center;
     width: 100%;
     height: auto;
     min-height: 71.3rem;
     position: relative;
-    padding-bottom: 9.4rem;
+    // padding-bottom: 9.4rem;
     margin-top: unset !important ;
-    @media (max-width: 2560px) {
-        background-size: contain !important;
-    }
+    z-index: 1;
     @media screen and (max-width: $lg) {
-        margin-top: -46rem  !important  ;
+        margin-top: 0  !important  ;
     }
     @media screen and (max-width: $md) {
         background-image: none;
@@ -34,16 +33,25 @@
         }
     }
     .video-gallery-area{
-        padding-top: 54.3rem;
+        
+        @media (max-width: 2560px) {
+            padding-top: 91.3rem;
+        }
+        @media (max-width: 1440px) {
+            padding-top: 54.3rem;
+        }
         @media screen and (max-width: $lg) {
-            padding-top: 70.3rem;
+            // padding-top: 70.3rem;
+            padding-top: 50.3rem;
         }
         @media screen and (max-width: $md) {
            padding-top: 3rem;
            background-color: $theme-black;
            padding-bottom: 3rem;
         }
-       
+        .bgbg{
+            background-color: #131313;
+        }
         h4{
             color: $secondary-color;
             font-weight: 400;
@@ -54,6 +62,7 @@
             align-items: center;
             font-size: 3.5rem;
             margin-bottom: 4.8rem;
+            padding-top: 20px;
             @media screen and (max-width: $xl) {
                 font-size: 2.8rem;
             }

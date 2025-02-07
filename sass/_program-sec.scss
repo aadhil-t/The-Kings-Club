@@ -1,6 +1,9 @@
 
 .program-sec{
     padding-bottom: 9.8rem;
+    z-index: 1;
+    background-color: #131313;
+    position: relative;
     @media screen and (max-width: $lg) {
         padding-bottom: 7rem;
     }

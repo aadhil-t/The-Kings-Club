@@ -3,6 +3,9 @@
     padding-top: 10.5rem;
     padding-bottom: 6.7rem;
     background: $theme-black-60;
+    position: relative;
+    z-index: 0;
+    background-color: #131313;
     @media screen and (max-width: $sm) {
         // padding-top: 8rem;
         padding-top: 6rem;

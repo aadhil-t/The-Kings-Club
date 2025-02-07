@@ -1,6 +1,8 @@
 .success-box-sec{
     // padding-top: 98px;
     position: relative;
+    z-index: 1;
+    background-color: #131313;
     .success-box-outer{
         display: flex;
         // gap: 285px;
@@ -10,9 +12,6 @@
         border-radius: 4rem;
         padding-left: 7.7rem;
         padding-right: 7.7rem;
-        @media (max-width: 2560px) {
-            padding-bottom: 126px;
-        }
         @media screen and (max-width: $lg) {
             padding-left: 4rem;
             padding-right: 4rem;

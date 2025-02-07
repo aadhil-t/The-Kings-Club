@@ -1,5 +1,8 @@
 .gallery-blk-sec{
-    padding-top: 9.4rem;
+    padding-top: 9.4rem;  
+    position: relative;
+    z-index: 1;
+    background-color: #131313;
     @media screen and (max-width: $lg) {
         padding-top:7rem;
     }

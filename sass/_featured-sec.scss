@@ -1,4 +1,7 @@
 .featured-main-sec{
+    position: relative;
+    z-index: 1;
+    background-color: #131313;
     @media screen and (max-width: $sm) {
     //    padding-bottom: 3rem;
        padding-bottom: 0;

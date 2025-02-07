@@ -1,7 +1,11 @@
 .testimonial-slider-sec{
-    padding-top: 19.5rem;
+    // padding-top: 19.5rem;
+    padding-top: 88px;
     padding-bottom: 9.5rem;
     background-color: $theme-black-20;
+    position: relative;
+    z-index: 1;
+    background-color: #0B0B0B;
     @media screen and (max-width: $lg) {
         padding-top:25rem;
         padding-bottom: 7rem;
