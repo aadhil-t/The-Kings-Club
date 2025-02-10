@@ -16,3 +16,8 @@
 }
 
 
+@mixin border-animation($dimension, $easing ,$pipe ) 
+{
+    transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+    -web-kit-transition: $transition_duration  $dimension $easing border-pipeline($transition_duration,$pipe);
+}
