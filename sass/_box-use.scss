@@ -87,7 +87,10 @@
         @media screen and (max-width: $sm) {
             margin: 0;
         }
-
+    }
+    .common-btn-blk{
+        padding-top: 46px;
+        justify-content: center;
     }
     .border-box-item{
         width: calc(33.33% - 2rem);
@@ -100,10 +103,13 @@
         // min-height: 444px;
         border-radius: 4rem;
         transition: 0.7s ease all;
+        height: 100%;
+        min-height: 420px;
         @media screen and (max-width: $lg) {
             width: calc(50% - 2rem);
             padding: 3rem;
             margin-bottom: 2rem;
+            min-height: auto;
             &:last-child{
                 margin-bottom: 0;
             }
@@ -113,6 +119,7 @@
             margin: 0;
             margin-bottom: 2rem;
             padding: 2.5rem;
+            min-height: auto;
             &:last-child{
                 margin-bottom: 0;
             }
