@@ -3,6 +3,29 @@
     position: relative;
     z-index: 1;
     background-color: #131313;
+    .common-btn-blk{
+        width: 100%;
+        justify-content: center
+    }
+    .succ-btn{
+        position: absolute;
+        bottom: 17%;
+    }
+    @media (max-width: $lg) {
+    .succ-btn{
+        bottom: 4%;
+    }
+    }
+    @media (max-width: $md) {
+    .succ-btn{
+        bottom: 7%;
+    }
+    }
+    @media (max-width: $sm) {
+    .succ-btn{
+        bottom: 3%;
+    }
+    }
     .success-box-outer{
         display: flex;
         // gap: 285px;
@@ -258,6 +281,21 @@
                     width: 100%;
                 } 
             }
+        }
+    }
+    @media (max-width:2560px) {
+        .succ-btm-img{
+            aspect-ratio: 4;
+        }
+    }
+    @media (max-width:1440px) {
+        .succ-btm-img{
+            aspect-ratio: 3;
+        }
+    }
+    @media (max-width: $sm) {
+        .succ-btm-img{
+            aspect-ratio: 2;
         }
     }
 }

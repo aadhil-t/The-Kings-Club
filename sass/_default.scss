@@ -340,3 +340,14 @@ p,li{
 .succ-padd-btm{
 	padding-bottom: 193px;
 }
+.succ-top{
+    position: relative;
+    top: 85px;
+}
+@media screen and (max-width: $md) {
+	.succ-top{
+		position: relative;
+		top: unset;
+	}
+
+ }

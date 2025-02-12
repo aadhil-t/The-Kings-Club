@@ -74,18 +74,26 @@ z-index: 1;
         //     // padding-top: 70.3rem;
         //     padding-top: 50.3rem;
         // }
-        // .pad-outer{
-            
-        // }
+        .pad-outer{
+            position: relative;
+            top: -170px;
+        }
+        @media (max-width: $sm) {
+            .pad-outer{
+                position: relative;
+                top: -100px;
+            }
+        }
         background-color: #000000;
-        padding-bottom: 9rem;
+        // padding-bottom: 9rem;
         @media screen and (max-width: $md) {
            padding-top: 3rem;
            background-color: $theme-black;
            padding-bottom: 3rem;
         }
-        // .bgbg{
-        // }
+        .bgbg{
+            margin-bottom: -60px;
+        }
         h4{
             color: $secondary-color;
             font-weight: 400;
